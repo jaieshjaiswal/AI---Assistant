@@ -192,7 +192,7 @@ if(!username || !password){
 
 }
   const response = await fetch(
-    "http://127.0.0.1:8000/signup",
+    "https://ai-assistant-53dd.onrender.com",
     {
       method:"POST",
 
@@ -226,7 +226,7 @@ if(!username || !password){
 
 }
   const response = await fetch(
-    "http://127.0.0.1:8000/login",
+    "https://ai-assistant-53dd.onrender.com",
     {
       method:"POST",
 
@@ -265,7 +265,7 @@ async function getAIResponse(message) {
   try {
 
     const response = await fetch(
-      "http://127.0.0.1:8000/chat",
+      "https://ai-assistant-53dd.onrender.com",
       {
         method: "POST",
 
