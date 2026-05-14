@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alice AI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+  <div class="auth-popup" id="authPopup">
+
+    <h2>AI Assistant Login</h2>
+
+    <input type="text" id="username" placeholder="Username" />
+
+    <input type="password" id="password" placeholder="Password" />
+
+    <div class="auth-buttons">
+      <button id="loginBtn">Login</button>
+      <button id="signupBtn">Signup</button>
+    </div>
+
+    <p id="authMessage"></p>
+
+  </div>
+  <div class="chat-button" id="chatButton">
+    🗪
+  </div>
+
+  <div class="chat-popup" id="chatPopup">
+    <div class="chat-header">
+      AI Assistant
+
+      <div class="header-buttons">
+        <button id="themeBtn">🌚</button>
+      </div>
+
+    </div>
+
+    <div class="chat-body" id="chatBody">
+
+    </div>
+
+    <div class="suggestions">
+      <button onclick="sendSuggestion('Tell me a joke')">Joke</button>
+      <button onclick="sendSuggestion('Explain AI')">Explain AI</button>
+      <button onclick="sendSuggestion('Write a JavaScript tip')">JS Tip</button>
+    </div>
+<div class="menu-popup" id="menuPopup">
+
+  <button id="imageOption">📷 Add Image</button>
+
+  <button id="fileOption">📄 Add File</button>
+
+  <button id="modeOption">🧠 AI Mode</button>
+  <select id="modeSelect" hidden>
+
+  <option value="normal">Normal AI</option>
+
+  <option value="coder">Coding Assistant</option>
+
+  <option value="teacher">Teacher</option>
+
+  <option value="funny">Funny AI</option>
+
+  <option value="interview">Interview Coach</option>
+
+</select>
+
+  <button id="clearOption">🗑️ Clear Chat</button>
+
+  <button id="logoutOption">🚪 Logout</button>
+  
+
+</div>
+    <div class="chat-footer">
+      <input type="text" id="userInput" placeholder="Type message..." autocomplete="off" />
+      <input
+  type="file"
+  id="imageInput"
+  accept="image/*"
+  hidden
+/>
+<input
+  type="file"
+  id="fileInput"
+  hidden
+/>
+
+<button id="menuBtn">➕</button>
+      <button id="micBtn">🎙️</button>
+      <button type="button" id="sendBtn">➤</button>
+    </div>
+
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
