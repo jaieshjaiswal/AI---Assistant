@@ -192,7 +192,7 @@ if(!username || !password){
 
 }
   const response = await fetch(
-    "https://ai-assistant-53dd.onrender.com",
+    "https://ai---assistant-53dd.onrender.com",
     {
       method:"POST",
 
@@ -226,7 +226,7 @@ if(!username || !password){
 
 }
   const response = await fetch(
-    "https://ai-assistant-53dd.onrender.com",
+    "https://ai---assistant-53dd.onrender.com",
     {
       method:"POST",
 
@@ -265,7 +265,7 @@ async function getAIResponse(message) {
   try {
 
     const response = await fetch(
-      "https://ai-assistant-53dd.onrender.com",
+      "https://ai---assistant-53dd.onrender.com",
       {
         method: "POST",
 
